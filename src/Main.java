@@ -36,7 +36,8 @@ public class Main {
 //      Additional1.triangle();
 //      Additional2.task();
 //      Additional3.task();
-        Additional4.compareSpeeds();
+//      Additional4.compareSpeeds();
+        Additional6.timeOfTravel();
 //      Additional7.seasons();
 //      Additional11.money();
 //      Additional15.squareAndCircle();

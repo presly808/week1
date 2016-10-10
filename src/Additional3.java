@@ -8,7 +8,13 @@ public class Additional3 {
     public static void task(){
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("Enter number > 99, < 1000");
         int num = sc.nextInt();
+
+        if((num < 100) || (num > 999)){
+            System.out.println("Incorrect input");
+            return;
+        }
 
         int [] arr = new int[3];
 
@@ -20,15 +26,15 @@ public class Additional3 {
         }
 
         if((arr[0] == arr[1]) && (arr[1] == arr[2])) {
-            System.out.println("All numbs are equals");
+            System.out.println("All numbers are equals");
             return;
         }
 
         if((arr[0] == arr[1]) || (arr[1] == arr[2]) || (arr[2] == arr[0])) {
-            System.out.println("Two numbs are equals");
+            System.out.println("Two numbers are equals");
             return;
         }
 
-        System.out.println("All numbs are different");
+        System.out.println("All numbers are different");
     }
 }

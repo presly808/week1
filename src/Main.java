@@ -34,7 +34,9 @@ public class Main {
         System.out.println(HowManyNumbs.amountOfNumbers(num, check));
 */
 //      Additional1.triangle();
-        Additional2.task();
+//      Additional2.task();
+        Additional3.task();
+//      Additional11.money();
     }
     public static void outputArr(double[] arr){
 

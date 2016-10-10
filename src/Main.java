@@ -39,8 +39,9 @@ public class Main {
 //      Additional4.compareSpeeds();
 //      Additional6.timeOfTravel();
 //      Additional7.seasons();
+        Additional8.cost();
 //      Additional11.money();
-        Additional13.task();
+//      Additional13.task();
 //      Additional15.squareAndCircle();
 //      Additional14.luckyNumber();
     }

@@ -14,6 +14,11 @@ public class Additional6 {
         System.out.println("Enter distance in m");
         double distance = sc.nextDouble();
 
+        if((speed <= 0) || (distance < 0)){
+            System.out.println("Incorrect input");
+            return -1;
+        }
+
         double seconds = distance / speed;
         int mins = 0;
         int hours = 0;

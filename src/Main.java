@@ -37,9 +37,10 @@ public class Main {
 //      Additional2.task();
 //      Additional3.task();
 //      Additional4.compareSpeeds();
-        Additional6.timeOfTravel();
+//      Additional6.timeOfTravel();
 //      Additional7.seasons();
 //      Additional11.money();
+        Additional13.task();
 //      Additional15.squareAndCircle();
 //      Additional14.luckyNumber();
     }

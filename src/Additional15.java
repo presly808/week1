@@ -14,6 +14,12 @@ public class Additional15 {
         System.out.println("Enter Sof circle");
         double circleS = sc.nextDouble();
 
+        if((circleS <= 0) || (squareS < 0)){
+            System.out.println("Incorrect input");
+            return -2;
+        }
+
+
         double squareSide = Math.sqrt(squareS);
         double circleRadius = Math.sqrt(circleS) / 3.14;
 

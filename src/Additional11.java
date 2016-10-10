@@ -14,6 +14,12 @@ public class Additional11 {
         System.out.println("Enter number of cents");
         int cent = sc.nextInt();
 
+        if((cent < 0) || (cent > 99)){
+            System.out.println("Incorrect input");
+            return "";
+        }
+
+
         String[] numbNames = {  "копеек",
                                 "копейка",
                                 "копейки",

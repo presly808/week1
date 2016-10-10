@@ -36,9 +36,10 @@ public class Main {
 //      Additional1.triangle();
 //      Additional2.task();
 //      Additional3.task();
+        Additional7.seasons();
 //      Additional11.money();
 //      Additional15.squareAndCircle();
-        Additional14.luckyNumber();
+//      Additional14.luckyNumber();
     }
     public static void outputArr(double[] arr){
 

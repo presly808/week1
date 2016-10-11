@@ -6,15 +6,25 @@ import java.util.Scanner;
 
 public class Additional8 {
     public static double cost(){
-        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter price");
+        double price = input();
+
+        return output(price);
+    }
+
+    public static double input(){
+        Scanner sc = new Scanner(System.in);
         double price = sc.nextDouble();
 
-        if(price < 0){
+        while(price < 0){
             System.out.println("Incorrect input");
-            return -1;
+            price = sc.nextDouble();
         }
+
+        return price;
+    }
+
+    public static double output(double price){
 
         if(price > 1000){
             price *= 0.9;

@@ -6,7 +6,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-/*        Scanner sc = new Scanner(System.in);
+/*
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter number");
         int num = sc.nextInt();
@@ -37,14 +38,19 @@ public class Main {
 //      Additional2.task();
 //      Additional3.task();
 //      Additional4.compareSpeeds();
+//      Additional5.sameNumbers();
 //      Additional6.timeOfTravel();
 //      Additional7.seasons();
-        Additional8.cost();
+//      Additional8.cost();
+//      Additional9.goodWeigth();
+//      Additional10.cost();
 //      Additional11.money();
+//      Additional12.stormMark();
 //      Additional13.task();
 //      Additional15.squareAndCircle();
 //      Additional14.luckyNumber();
     }
+
     public static void outputArr(double[] arr){
 
         for(int i = 0; i < arr.length; i++){
@@ -52,5 +58,20 @@ public class Main {
         }
 
         System.out.println();
+    }
+
+    public static double[] input(int num){
+
+        Scanner sc = new Scanner(System.in);
+
+        double [] arr = new double[num];
+
+        System.out.println("Enter " + num + " numbers");
+
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = sc.nextDouble();
+        }
+
+        return arr;
     }
 }

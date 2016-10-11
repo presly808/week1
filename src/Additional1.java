@@ -6,29 +6,44 @@ import java.util.Scanner;
 
 public class Additional1 {
     public static int triangle(){
-        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter sizes");
+        double[] arr = Main.input(3);
 
-        double a = sc.nextDouble();
-        double b = sc.nextDouble();
-        double c = sc.nextDouble();
+        for(int i = 0; i < 3; i++){
+            if(arr[i] <= 0){
+                System.out.println("Incorrect input, repeat pls");
+                arr = Main.input(3);
+                i = -1;
+            }
+        }
 
-        if((a + b <= c) || (a + c <= b) || (b + c <= a)){
+        return isRegular(check(arr), arr);
+    }
+
+    public static boolean check(double[] arr){
+        if((arr[0] + arr[1] <= arr[2]) || (arr[0] + arr[2] <= arr[1]) || (arr[1] + arr[2] <= arr[0])){
             System.out.println("Not a triangle");
-            return -1;
+            return false;
         }
+        return true;
+    }
 
-        a *= a;
-        b *= b;
-        c *= c;
+    public static int isRegular(boolean check, double[] arr){
 
-        if((a + b == c) || (a + c == b) || (b + c == a)){
-            System.out.println("One of the angles is 90");
-            return 1;
+        if(check) {
+
+            for(int i = 0; i < 3; i++){
+                arr[i] *= arr[i];
+            }
+
+            if ((arr[0] + arr[1] == arr[2]) || (arr[0] + arr[2] == arr[1]) || (arr[1] + arr[2] == arr[0])) {
+                System.out.println("One of the angles is 90");
+                return 1;
+            }
+
+            System.out.println("Regular triangle");
+            return 0;
         }
-
-        System.out.println("Regular triangle");
-        return 0;
+        else return -1;
     }
 }

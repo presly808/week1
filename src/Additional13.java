@@ -5,15 +5,8 @@
 import java.util.Scanner;
 
 public class Additional13 {
-    public static void task(){
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter 3 numbers");
-        double[] arr = new double[3];
-
-        for(int i = 0; i < 3; i++){
-            arr[i] = sc.nextDouble();
-        }
+    public static double[] task(){
+        double[] arr = Main.input(3);
 
         int tmp = 0;
 
@@ -34,5 +27,6 @@ public class Additional13 {
 
         System.out.println("Result");
         Main.outputArr(arr);
+        return arr;
     }
 }

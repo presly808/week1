@@ -13,6 +13,7 @@ public class Additional2 {
             arr[i] = arr[i] > 0 ? Math.pow(arr[i], 3) : 0;
         }
 
+        // rename class Main, eg. ArrayUtils
         Main.outputArr(arr);
     }
 }

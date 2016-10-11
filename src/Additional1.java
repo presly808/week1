@@ -6,11 +6,12 @@ import java.util.Scanner;
 
 public class Additional1 {
     public static int triangle(){
-
+        // Weird name 'Main'
         double[] arr = Main.input(3);
 
         for(int i = 0; i < 3; i++){
             if(arr[i] <= 0){
+                // dont input within methods triangle, you should pass input arg to the method
                 System.out.println("Incorrect input, repeat pls");
                 arr = Main.input(3);
                 i = -1;
